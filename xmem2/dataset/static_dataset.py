@@ -8,9 +8,9 @@ from torchvision.transforms import InterpolationMode
 from PIL import Image
 import numpy as np
 
-from dataset.range_transform import im_normalization, im_mean
-from dataset.tps import random_tps_warp
-from dataset.reseed import reseed
+from xmem2.dataset.range_transform import im_normalization, im_mean
+from xmem2.dataset.tps import random_tps_warp
+from xmem2.dataset.reseed import reseed
 
 
 class StaticTransformDataset(Dataset):

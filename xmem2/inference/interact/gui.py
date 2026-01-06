@@ -20,7 +20,7 @@ import re
 from time import perf_counter
 import cv2
 
-from inference.frame_selection.frame_selection import select_next_candidates
+from xmem2.inference.frame_selection.frame_selection import select_next_candidates
 # fix conflicts between qt5 and cv2
 os.environ.pop("QT_QPA_PLATFORM_PLUGIN_PATH")
 
@@ -35,9 +35,9 @@ from PyQt5.QtWidgets import (QWidget, QApplication, QComboBox, QCheckBox,
 from PyQt5.QtGui import QPixmap, QKeySequence, QImage, QTextCursor, QIcon, QRegExpValidator
 from PyQt5.QtCore import Qt, QTimer, QThreadPool, QRegExp
 
-from model.network import XMem
+from xmem2.model.network import XMem
 
-from inference.inference_core import InferenceCore
+from xmem2.inference.inference_core import InferenceCore
 from .s2m_controller import S2MController
 from .fbrs_controller import FBRSController
 

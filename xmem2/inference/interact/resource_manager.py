@@ -10,13 +10,13 @@ from PIL import Image
 import torch
 from torchvision.transforms import Resize, InterpolationMode
 
-from util.image_loader import PaletteConverter
+from xmem2.util.image_loader import PaletteConverter
 
 if not hasattr(Image, 'Resampling'):  # Pillow<9.0
     Image.Resampling = Image
 import numpy as np
 
-from util.palette import davis_palette
+from xmem2.util.palette import davis_palette
 import progressbar
  
 

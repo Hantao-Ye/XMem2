@@ -5,7 +5,7 @@ import torchvision.transforms.functional as FT
 from torchvision.transforms import ColorJitter, Grayscale, RandomPosterize, RandomAdjustSharpness, ToTensor, RandomAffine
 from tqdm import tqdm
 
-from inference.data.video_reader import Sample
+from xmem2.inference.data.video_reader import Sample
 
 
 def extract_keys(dataloder, processor, print_progress=False, flatten=True, **kwargs):

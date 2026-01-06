@@ -18,15 +18,15 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from PIL import Image
 
-from inference.frame_selection.frame_selection import select_next_candidates
-from model.network import XMem
-from util.configuration import VIDEO_INFERENCE_CONFIG
-from util.image_saver import ParallelImageSaver, create_overlay, save_image
-from util.tensor_util import compute_array_iou
-from inference.inference_core import InferenceCore
-from inference.data.video_reader import Sample, VideoReader
-from inference.data.mask_mapper import MaskMapper
-from inference.frame_selection.frame_selection_utils import extract_keys, get_determenistic_augmentations
+from xmem2.inference.frame_selection.frame_selection import select_next_candidates
+from xmem2.model.network import XMem
+from xmem2.util.configuration import VIDEO_INFERENCE_CONFIG
+from xmem2.util.image_saver import ParallelImageSaver, create_overlay, save_image
+from xmem2.util.tensor_util import compute_array_iou
+from xmem2.inference.inference_core import InferenceCore
+from xmem2.inference.data.video_reader import Sample, VideoReader
+from xmem2.inference.data.mask_mapper import MaskMapper
+from xmem2.inference.frame_selection.frame_selection_utils import extract_keys, get_determenistic_augmentations
 
 def _inference_on_video(frames_with_masks, imgs_in_path, masks_in_path, masks_out_path,
                         original_memory_mechanism=False,

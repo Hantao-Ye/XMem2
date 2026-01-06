@@ -9,10 +9,10 @@ import torch.nn.functional as F
 import torchvision.transforms.functional as FT
 import numpy as np
 from tqdm import tqdm
-from inference.frame_selection.frame_selection_utils import extract_keys
+from xmem2.inference.frame_selection.frame_selection_utils import extract_keys
 from torchvision.transforms import Resize, InterpolationMode
 
-from model.memory_util import get_similarity
+from xmem2.model.memory_util import get_similarity
 
 
 def first_frame_only(*args, **kwargs):

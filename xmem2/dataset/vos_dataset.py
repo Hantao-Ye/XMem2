@@ -8,8 +8,8 @@ from torchvision.transforms import InterpolationMode
 from PIL import Image
 import numpy as np
 
-from dataset.range_transform import im_normalization, im_mean
-from dataset.reseed import reseed
+from xmem2.dataset.range_transform import im_normalization, im_mean
+from xmem2.dataset.reseed import reseed
 
 
 class VOSDataset(Dataset):

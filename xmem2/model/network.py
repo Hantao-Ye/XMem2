@@ -9,9 +9,9 @@ It further depends on modules.py which gives more detailed implementations of su
 import torch
 import torch.nn as nn
 
-from model.aggregate import aggregate
-from model.modules import *
-from model.memory_util import *
+from xmem2.model.aggregate import aggregate
+from xmem2.model.modules import *
+from xmem2.model.memory_util import *
 
 
 class XMem(nn.Module):

@@ -1,11 +1,11 @@
 from time import perf_counter
 
 import torch
-from inference.memory_manager import MemoryManager
-from model.network import XMem
-from model.aggregate import aggregate
+from xmem2.inference.memory_manager import MemoryManager
+from xmem2.model.network import XMem
+from xmem2.model.aggregate import aggregate
 
-from util.tensor_util import pad_divide_by, unpad
+from xmem2.util.tensor_util import pad_divide_by, unpad
 
 
 class InferenceCore:

@@ -9,10 +9,10 @@ import numpy as np
 from PIL import Image
 
 import torch
-from dataset.range_transform import inv_im_trans
+from xmem2.dataset.range_transform import inv_im_trans
 from collections import defaultdict
 
-from inference.interact.interactive_utils import overlay_davis
+from xmem2.inference.interact.interactive_utils import overlay_davis
 
 def tensor_to_numpy(image):
     image_np = (image.numpy() * 255).astype('uint8')

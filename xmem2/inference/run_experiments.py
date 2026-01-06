@@ -10,12 +10,12 @@ import torch
 from tqdm import tqdm
 from matplotlib import pyplot as plt
 from PIL import Image
-from inference.frame_selection.frame_selection import uniformly_selected_frames
-from util.metrics import batched_f_measure, batched_jaccard
+from xmem2.inference.frame_selection.frame_selection import uniformly_selected_frames
+from xmem2.util.metrics import batched_f_measure, batched_jaccard
 from p_tqdm import p_umap
 
-# from inference.frame_selection.frame_selection import KNOWN_ANNOTATION_PREDICTORS
-from inference.run_on_video import predict_annotation_candidates, run_on_video
+# from xmem2.inference.frame_selection.frame_selection import KNOWN_ANNOTATION_PREDICTORS
+from xmem2.inference.run_on_video import predict_annotation_candidates, run_on_video
 
 # ---------------BEGIN Inference and visualization utils --------------------------
 
