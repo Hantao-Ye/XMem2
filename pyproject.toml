@@ -1,0 +1,40 @@
+[project]
+name = "xmem2"
+version = "1.0.0"
+description = "XMem2: Production-level Video Segmentation"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "torchvision",
+    "opencv-contrib-python",
+    "pillow",
+    "numpy",
+    "scipy",
+    "requests",
+    "tqdm",
+    "progressbar2",
+    "pandas",
+]
+
+[project.optional-dependencies]
+gui = [
+    "PyQt5",
+]
+demo = [
+    "PyQt5",
+    "Cython",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["xmem2*"]
