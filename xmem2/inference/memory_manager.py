@@ -258,7 +258,11 @@ class MemoryManager:
             key0 = key[..., 0:0]
             value0 = value[..., 0:0]
             shrinkage0 = shrinkage[..., 0:0]
-            selection0 = selection[..., 0:0]
+            if selection is not None:
+                selection0 = selection[..., 0:0]
+            else:
+                selection0 = None
+                
             if num_perm_groups > num_temp_groups:
                 # for preloading into permanent memory
                 self.temporary_work_mem.add(key0, value0, shrinkage0, selection0, objects)
